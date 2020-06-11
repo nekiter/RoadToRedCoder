@@ -25,4 +25,5 @@ At the following table it's possible to see the titles for each rating at the ra
 
 ## The process
 
-... 2020/06/10 (First day) I started to do some basic problemset with dificuty 800 using C/C++, and read the book: Competitive Programmer’s Handbook by Antti Laaksonem.
+2020/06/10 (First day) I started to do some basic problemset with dificuty 800 using C/C++, and read the book: Competitive Programmer’s Handbook by Antti Laaksonem. (30 minutes)
+2020/06/11 Just solved some problems, getting used to c++(60 minutes)
