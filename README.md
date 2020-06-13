@@ -30,3 +30,5 @@ At the following table it's possible to see the titles for each rating at the ra
 - 2020/06/11 Just solved some problems, getting used to C++.(60 minutes)
 
 - 2020/06/12 I solved some problems, I feel that I'm searching too much how to handle string on C++, I'll focus one day of the next week on that. (30 minutes)
+
+- 2020/06/13 I decided to be one of the participants of [Codeforces Round #649 (Div. 2)](https://codeforces.com/contest/1364) even knowing that I was not ready, I tried to implement a recurse logic for the problem A, but it was O(n^2) and I could't manage to pass some test cases on the time needed, durring this week I'll review how other people solved this problem. (120 minutes)
