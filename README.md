@@ -39,3 +39,4 @@ At the following table it's possible to see the titles for each rating at the ra
     3. Read, do some exercices and try to search some applications for segment trees.
     4. Solve the problem [Grand Prix da Nlogônia](https://olimpiada.ic.unicamp.br/pratique/p2/2019/f3/prix/) from UBI19 it's a problem that uses knowledge from DFS and segment trees, showed on the programmation club last week.
  
+ - 2020/06/15 (60 minutes) I've spent some time doing other exercice from [programmation club of UTFPR](http://cdp.dainf.ct.utfpr.edu.br/), it looks like an linked list but I'm not sure what I'm doing wrong, I'll watch the second part of the video, and then continue with my normal study flow, I still have some doubts about this club and the invested time on it.
