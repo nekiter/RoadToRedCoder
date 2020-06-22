@@ -47,4 +47,4 @@ At the following table it's possible to see the titles for each rating at the ra
 
  - 2020/06/22 (60 minutes) I started to do some exercices with dificulty 900, most of then was pretty easy, but the last one took something around 15 minutes, I managed to do it, but after it I saw some orange guys solution and it was really smaller, IDK if I should care about it already. Besides that last days I didn't found time to train last days, but at least I've read a litle bit and the book showed a table that is really useful it shows a estimation between the input size and the required time complexity.
 
- ![Relation complexity x input](./img/relation_complexity_input.png)
+ ![Relation complexity x input](./img/relation_complexity_in_put.png)
