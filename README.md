@@ -54,3 +54,5 @@ At the following table it's possible to see the titles for each rating at the ra
     2. Sometimes I overthink about a problem spending more time than I should on simple answers.
     3. Sometimes I try to code before be sure about my answer, spending more time than I should on a problem.
     4. My code is too verbose, making it too long and slower to write, I don't need to mantain it, so I shouldn't spend so much time implementing it.
+
+- 2020/06/25 (60 minutes) Today I remembered some of my classes and programed some sorting algorithms described on the book Competitive Programmer’s Handbook by Antti Laaksonem, I know that this isn't that much worth for competitive programing since C++ already has a really good sorting algorithm implemented but it's good to remember how the basic works and also I'm trying to get used to C++ again.
