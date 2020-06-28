@@ -56,3 +56,5 @@ At the following table it's possible to see the titles for each rating at the ra
     4. My code is too verbose, making it too long and slower to write, I don't need to mantain it, so I shouldn't spend so much time implementing it.
 
 - 2020/06/25 (60 minutes) Today I remembered some of my classes and programed some sorting algorithms described on the book Competitive Programmer’s Handbook by Antti Laaksonem, I know that this isn't that much worth for competitive programing since C++ already has a really good sorting algorithm implemented but it's good to remember how the basic works and also I'm trying to get used to C++ again.
+
+- 2020/06/28 (75 minutes) Today I joined a Div. 3 round on code forces, I could manage to solve 3/7 problems which is pretty ok, since I joined with almost one hour of contest, the problems were medium dificulty for me, so I'll look the dificilty level of those exercices then try to solve similar problems.
