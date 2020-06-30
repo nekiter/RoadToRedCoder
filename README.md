@@ -60,3 +60,5 @@ At the following table it's possible to see the titles for each rating at the ra
 - 2020/06/28 (75 minutes) Today I joined a Div. 3 round on code forces, I could manage to solve 3/7 problems which is pretty ok, since I joined with almost one hour of contest, the problems were medium dificulty for me, so I'll look the dificilty level of those exercices then try to solve similar problems.
 
 - 2020/06/29 (75 minutes) Today I've read a lot during the breaks from my work, I also spent some time trying to solve problem D from yesterday contest, but no success so far, tomorrow I'll give a look on the tutorial. 
+
+- 2020/06/30 (30 minutes) During my lunch I solved the problem D from yestarday, I had some implamentation problems, this was a 1400 dificulty, and it look a little high than I need right now (I've spent almost two hours on it, which too much time).

@@ -38,19 +38,20 @@ int main(){
 
         ll ans = -1;
         int count = 1;
-        for (int i = 1; i < n; i++)
+        for (int i = 0; i < n-1; i++)
         {
             if(!arr[i]) continue;
-            if(arr[i] != arr[i-1]){
-                ans = max(ans, 1ll*k*count+ (k-arr[i]) );
-                count = 0;
+            if(arr[i] != arr[i+1]){
+                ans = max(ans, 1ll*k*(count-1)+ (k-arr[i]) );
+                count = 1;
             }else{
                 count++;
             }
         } 
-        cout << ans+1 << endl;
-
-   
+        if(count != 0){
+            ans = max(ans, 1ll*k*(count-1)+ (k-arr[n-1]) );
+        }
+        cout << ans+1 << endl;   
     }
     
 }
