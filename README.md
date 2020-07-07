@@ -63,6 +63,8 @@ At the following table it's possible to see the titles for each rating at the ra
 
 - 2020/06/30 (30 minutes) During my lunch I solved the problem D from yestarday, I had some implamentation problems, this was a 1400 dificulty, and it look a little high than I need right now (I've spent almost two hours on it, which too much time).
 
-- 2020/06/30 (45 minutes) I've done a exercice with dificulty 1100, it looks to fit to my current ability, I'll keep this level until it get easy.
+- 2020/07/02 (45 minutes) I've done a exercice with dificulty 1100, it looks to fit to my current ability, I'll keep this level until it get easy.
 
-- 2020/06/30 (90 minutes) I've done some exercices with dificulty 1100, the last one take too much time, which mean that the level is ok (2/3 problems solved). I need to be more careful with my thoughts on papper I've spent more time on the last one because I was look for a wrong table.
+- 2020/07/06 (90 minutes) I've done some exercices with dificulty 1100, the last one take too much time, which mean that the level is ok (2/3 problems solved). I need to be more careful with my thoughts on papper I've spent more time on the last one because I was look for a wrong table.
+
+- 2020/07/07 (60 minutes) I've manage to solve the problem from yesterday, I also solved a new one, but nothing new, tomorrow I'll try to read a little bit, there's some time I don't do that.
