@@ -6,17 +6,17 @@ typedef long long ll;
 using namespace std;
 
 int main(){
-    int n, p = 0;
+    int n, p = 0, can = 1;
     cin >> n;
     string names[5] = {"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
 
-    while(5*pow(2,p) <= n){
+    while(can+5*pow(2,p) <= n){
+        can += 5*pow(2,p);
         p++;
     }
 
-    int ans = n/pow(2,p);
-    
-
+    n -= can;
+    int ans = n/(pow(2,p));
     cout << names[ans] << endl;
 }
 
