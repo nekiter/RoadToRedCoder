@@ -68,3 +68,5 @@ At the following table it's possible to see the titles for each rating at the ra
 - 2020/07/06 (90 minutes) I've done some exercices with dificulty 1100, the last one take too much time, which mean that the level is ok (2/3 problems solved). I need to be more careful with my thoughts on papper I've spent more time on the last one because I was look for a wrong table.
 
 - 2020/07/07 (60 minutes) I've manage to solve the problem from yesterday, I also solved a new one, but nothing new, tomorrow I'll try to read a little bit, there's some time I don't do that.
+
+- 2020/07/08 (30 minutes) Just doing a exercice, for now the dificult 1100 is good for me, not to hard and not to easy, I'll just continue doing that.
