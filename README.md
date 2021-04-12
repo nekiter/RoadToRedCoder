@@ -74,3 +74,5 @@ At the following table it's possible to see the titles for each rating at the ra
 - 2021/04/06 (60 minutes) Solving some hacker rank warmup questions, I've joined a study group and it looks a great idea to get the hacker rank certification.
 
 - 2021/04/11 (120 minutes) Solving some hacker rank problems about strings and hashtables, those problems were choosen for the study group foucosing on the hacker rank certification.
+
+- 2021/04/12 (120 minutes) Studied and implemented how a hashtable works, also made a presentation to explain it to the study group.
