@@ -80,3 +80,5 @@ At the following table it's possible to see the titles for each rating at the ra
 - 2021/04/17 (120 minutes) Just did some small exercises about lists, this weekend I want to study about heap, I've noticed that I didn't had any contact with it before.
 
 - 2021/04/22 (240 minutes) I've done some hacker rank exercices about heap, using a lib with the implamentation was easy to medium, but I didn't manage to implement the heap logic by myself, I'll try again soon.
+
+- 2021/04/26 (60 minutes) Started to study a little bit about stacks and queues. I need more pratice.
