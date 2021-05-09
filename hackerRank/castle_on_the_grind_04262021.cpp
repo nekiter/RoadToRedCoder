@@ -5,66 +5,121 @@ using namespace std;
 vector<string> split_string(string);
 
 // Complete the minimumMoves function below.
+bool canMove(vector<string> grid, int x, int y){
+    if( x < 0 || x >= grid.size()){
+        return false;
+    }
+    if( y < 0 || y >= grid.size()){
+        return false;
+    }
+    if(grid[x][y] == 'X' ){
+        return false;
+    }
+
+    return true;
+}
+
+void moveOnGrid(
+    vector<string> grid, 
+    int startX, 
+    int startY, 
+    int currentDistance, 
+    pair<int,int> direction,
+    queue<pair<int, int>>& toVisit,
+    vector<vector<int>> &distanceMatrix) {
+    int nextX = startX + direction.first;
+    int nextY = startY + direction.second;
+
+    bool moved = false;
+    while( canMove(grid, nextX, nextY) ){
+        if(distanceMatrix[nextX][nextY] != -1 && distanceMatrix[nextX][nextY] < currentDistance)  
+            break;
+        nextX = nextX + direction.first;
+        nextY = nextY + direction.second;
+        moved = true;
+        distanceMatrix[nextX - direction.first][nextY - direction.second] = currentDistance;
+        toVisit.push(pair<int,int>(nextX - direction.first, nextY - direction.second));
+    }
+  
+}
+
 int minimumMoves(vector<string> grid, int startX, int startY, int goalX, int goalY) {
+    vector<vector<int>> distance(grid.size(), vector<int>(grid.size(),-1));
+
     queue<pair<int, int>> q;
     q.push(make_pair(startX, startY));
-    
-    int distance[grid.size()][grid.size()];
-    for(int i = 0; i < grid.size(); i++){
-        for(int j = 0; j < grid.size(); j++){
-            distance[i][j] = -1;
-        }
-    }
     
     distance[startX][startY] = 0;
     while (q.size() > 0) {
         pair<int, int> currentNode = q.front();
-        int currentDistance = distance[currentNode.first][currentNode.second];
+        int currentDistance = distance[currentNode.first][currentNode.second] + 1;
         q.pop();
-        
+
         // Checking all neighbours
         //left
-        if(currentNode.first - 1 >= 0){
-            if(distance[currentNode.first - 1][currentNode.second] == -1 && grid[currentNode.first - 1][currentNode.second] != 'X'){
-                distance[currentNode.first - 1][currentNode.second] = currentDistance+1;
-                q.push(make_pair(currentNode.first - 1, currentNode.second));
-            }            
-        } 
+        moveOnGrid(
+            grid, 
+            currentNode.first, 
+            currentNode.second, 
+            currentDistance,
+            pair<int,int>(-1,0),
+            q,
+            distance);
         
         //right
-        if(currentNode.first + 1 < grid.size()){
-            if(distance[currentNode.first + 1][currentNode.second] == -1  && grid[currentNode.first + 1][currentNode.second] != 'X'){
-                distance[currentNode.first + 1][currentNode.second] = currentDistance+1;
-                q.push(make_pair(currentNode.first + 1, currentNode.second));
-            }            
-        } 
+        moveOnGrid(
+            grid, 
+            currentNode.first, 
+            currentNode.second, 
+            currentDistance,
+            pair<int,int>(+1,0),
+            q,
+            distance);
         
         //up
-        if(currentNode.second - 1 >= 0){
-            if(distance[currentNode.first][currentNode.second - 1] == -1  && grid[currentNode.first][currentNode.second - 1] != 'X'){
-                distance[currentNode.first][currentNode.second - 1] = currentDistance+1;
-                q.push(make_pair(currentNode.first , currentNode.second - 1));
-            }            
-        } 
+        moveOnGrid(
+            grid, 
+            currentNode.first, 
+            currentNode.second, 
+            currentDistance,
+            pair<int,int>(0,-1),
+            q,
+            distance);
         
         //down
-        if(currentNode.second + 1 < grid.size()){
-            if(distance[currentNode.first][currentNode.second + 1] == -1 && grid[currentNode.first][currentNode.second + 1] != 'X'){
-                distance[currentNode.first][currentNode.second + 1] = currentDistance+1;
-                q.push(make_pair(currentNode.first, currentNode.second + 1));
-            }
-        } 
-    }
-    
-    for(int i = 0; i < grid.size(); i++){
-        for(int j = 0; j < grid.size(); j++){
-            cout << distance[i][j] << " ";
+        moveOnGrid(
+            grid, 
+            currentNode.first, 
+            currentNode.second, 
+            currentDistance,
+            pair<int,int>(0,+1),
+            q,
+            distance);
+
+        if(distance[goalX][goalY] != -1){
+            break;
         }
-        cout << endl;
     }
+
+    // for(int i = 0; i < grid.size(); i++){
+    //     for(int j = 0; j < grid.size(); j++){
+    //         if(i == startX && j == startY)
+    //             cout << " S ";
+    //         else if(i == goalX && j == goalY)
+    //             cout << " G ";
+    //         else if(grid[i][j] == 'X')
+    //             cout << " X ";
+    //         else if(distance[i][j]/10 < 1 && distance[i][j] >= 0)
+    //             cout << " " << distance[i][j] << " ";
+    //         else
+    //             cout << distance[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
     
-    
-    return distance[goalX][goalY]/2;
+    // cout <<  distance[goalX][goalY]<< endl;
+    // cout << q.size() << endl;
+    return distance[goalX][goalY];
 }
 
 int main()
